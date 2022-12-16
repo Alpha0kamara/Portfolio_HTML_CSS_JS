@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+/*navbar ---------------*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E9DD6;
+    padding: .5rem;
+}
+.navItems{
+    display: flex;
+    list-style: none;
+}
+.navItem{
+    padding: 1rem;
+}
+.linkText{
+    text-decoration: none;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: #ABD6EE;
+}
+.home-foto{
+    height: 200px;
+    border-radius: 50%;
+    border: #fc0320 solid;
+}
+.main{
+    display: flex;
+    
+}
+.home-content{
+    gap: 10px;
+    width: 50%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#txt-info{
+    text-align: center;
+
+}
+#txt-who{
+    color: #fc0320;
+}
+
+/*------------ contact ---------------------*/
+#contact-content{
+    gap: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 10px;
+}
+
+/*----hobby -----------*/
+
+  #hobby-body{
+    background-color: #EAEFF1;
+    
+  
+  }
+  .hobby-body{
+   max-width: 500px;
+
+   align-items: center;
+   max-height: 50%;
+   justify-content: space-evenly;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+
+    display: inline-flex;
+    
+  }
+  .card{
+    background-color: white;
+    padding: 20px;
+   
+    margin-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
+}
+
+  .hobby-foto {
+   width: 100%;
+   padding: 20px;
+   border-radius: 0rem;
+  }
+
+  .p-hobby{
+    font-size: 14px;
+    padding: 20px;
+  }
+
+  .btn_hobby{
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+  
+    font-weight: 600;
+    color: #0077ff;
+    background-color: #e0efff;
+    margin:  auto;
+  display: block;
+  cursor: pointer;
+  }
+  
+
+
+.hobby-foto{
+    height: 200px;
+    width: 200px;
+}
+.btn_hobby{
+    height: 50px;
+    width: 200px;
+}
+
+#searchB{
+    border-radius: 5%;
+}
+
+/*----- voeding detail pagina styling ----*/
+.main-voeding{
+    display: inline-flexbox;
+    align-content: center;
+    background-color: #EAEFF1;
+    margin: auto;
+    max-width: 100%;
+}
+
+.detail-content{
+    padding: 20px;
+    max-width: 1080px;
+    background-color:#EAEFF1;
+
+    
+}
+.comment-content{
+    padding: 20px;
+    max-width: 1080px;
+    margin-right: 20px;
+    margin-bottom: auto;
+    align-content: center;
+    background-color: EAEFF1;
+
+}
+#bericht{
+    width: 60%;
+    height: 200px;
+}
+#btnBericht{
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+  
+    font-weight: 600;
+    color: #0077ff;
+    background-color: #e0efff;
+    margin:  auto;
+  display: block;
+  cursor: pointer;
+
+}
+#btnLike{
+    align-content:center;
+    padding: auto;
+    margin: 20px;
+}
+
+.fa-thumbs-up:hover{
+    color: #fc0320;
+
+    
+}
+
+
+
+
