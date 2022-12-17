@@ -12,21 +12,44 @@
 <body>
     <nav class="nav">
         <figure>
-            <a href="/index.html" ><img src="/assets/logo.jpeg" alt="mijn foto logo" class="logo" ></a>
+            <a href="/index.html"><img src="/assets/logo.jpeg" alt="mijn foto logo" class="logo"></a>
         </figure>
         <ul class="navItems">
             <li class="navItem"> <a class="linkText" href="/index.html">Home</a> </li>
             <li class="navItem"> <a class="linkText" href="/hobby.html">Hobby</a></li>
             <li class="navItem"> <a class="linkText" href="/contact.html">Contact</a></li>
-            <input class="navItem" id="searchB" type="text" placeholder="Zoeken.."/>
+            <input class="navItem" id="searchB" type="text" placeholder="Zoeken.." />
         </ul>
     </nav>
-    <main class="main">
-        <section class="home-content">
-
-            
-
-
+    <main class="main-voeding">
+        <section class="detail-content">
+            <h2>Zelfverbetering</h2>
+            <figure>
+                <img src="/assets/zelfbetering.PNG" alt="Supplementen" class="hobby-foto">
+                <figcaption> &#169; <abbr
+                        title="https://healthyhispanicliving.com/lifestyle/self_advocacy/20_self_improvement_tips_that_will_change_your_life/">url</abbr>
+                </figcaption>
+            </figure>
+            <p class="p-hobby">
+                Zelfverbetering houdt in dat je elke dag jou eigen probeer te verbeteren dit kan door:
+                Van jou zelf te houden, want dit gaat hand in hand met hoe je anderen mensen jou laat
+                behandelen.
+                Door aan fitness te doen om zo jouw energy level omhoog te houden en zo gelukkiger in leven te
+                zijn.
+                Als
+                je elke dag probeer te verbeteren kan je ver komen in het leven.
+            </p>
+        </section>
+        <section class="comment-content">
+            <form>
+                <textarea name="bericht" id="bericht" placeholder="Laat uw commentaar hier achter"></textarea>
+                <button type="submit" id="btnBericht" onclick="popBericht()">Versturen</button>
+            </form>
+        </section>
+        <section id="btnLike">
+            <div class="fa-3x">
+                <i class="fa fa-thumbs-up hover-animation"></i>
+            </div>
         </section>
     </main>
     <aside></aside>

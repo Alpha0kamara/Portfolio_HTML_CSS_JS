@@ -5,34 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Kamara </title>
+    <title>Alpha Kamara goals</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+    <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <nav class="nav">
         <figure>
-            <a href="/index.html" ><img src="/assets/logo.jpeg" alt="mijn foto logo" class="logo" ></a>
+            <a href="/index.html"><img src="/assets/logo.jpeg" alt="mijn foto logo" class="logo"></a>
         </figure>
         <ul class="navItems">
             <li class="navItem"> <a class="linkText" href="/index.html">Home</a> </li>
             <li class="navItem"> <a class="linkText" href="/hobby.html">Hobby</a></li>
             <li class="navItem"> <a class="linkText" href="/contact.html">Contact</a></li>
-            <input class="navItem" id="searchB" type="text" placeholder="Zoeken.."/>
+            <input class="navItem" id="searchB" type="text" placeholder="Zoeken.." />
         </ul>
     </nav>
-    <main class="main">
-        <section class="home-content">
+    <main class="main-voeding">
+        <section class="detail-content">
+            <h2>Goals</h2>
+            <figure>
+                <img src="/assets/goals.png" alt="Supplementen" class="hobby-foto">
+                <figcaption> &#169; <abbr title="https://www.bodybuilding.com/images/2021/june/these-workouts-are-how-strong-women-get-built-header-700xh.jpg">url</abbr></figcaption>
+            </figure>
+            <p class="p-hobby">
+                Aan de hand van een persoon zijn doelen kan een persoon een fitness schema kiezen dat bij zijn
+                        doelen
+                        staat. Het is namelijk veel moeilijker om tegelijkertijd gewicht te verliezen en spieren te
+                        bouwen.
+                        Het
+                        zou makkelijker zijn voor een persoon om te kiezen om bijvoorbeeld alleen gewicht te verliezen
+                        of om
+                        alleen spieren te bouwen.
+            </p>
+        </section>
+        <section id="mapje">
+            <h3>Basic fit</h3>
+            <div id="map">
+            </div>
 
-            
+        </section>
+        <section class="comment-content">
+            <form>
+                <textarea name="bericht" id="bericht" placeholder="Laat uw commentaar hier achter"></textarea>
+                <button type="submit" id="btnBericht" onclick="popBericht()">Versturen</button>
 
-
+            </form>
+        </section>
+        <section id="btnLike">
+            <div class="fa-3x">
+                <i class="fa fa-thumbs-up hover-animation"></i>
+            </div>
         </section>
     </main>
     <aside></aside>
     <footer class="footer">
         <p>&copy; 2023 Alpha Kamara G_1PRO_D2</p>
     </footer>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="js/leafScript.js"></script>
 </body>
 
 </html>
