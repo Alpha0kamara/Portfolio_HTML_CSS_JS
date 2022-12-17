@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Kamara </title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
         </ul>
     </nav>
     <main class="main">
-        <section id="contact-content">
+        <form id="form-contact">
             <h2>Contact mij</h2>
             <h3>
                 <span id="confirm">
@@ -31,8 +32,8 @@
             <input id="txt_email" type="text" Required="required" placeholder="Enter your email">
             <textarea id="txt_message" rows="4" cols="20" Required="required"
                 placeholder="Enter your message"></textarea>
-            <input type="submit" id="btn_send" value="SEND">
-        </div>
+            <input type="submit" id="btn_send"  value="SEND" onclick="sendMessage()">
+        </form>
     </main>
     <footer class="footer">
         <p>&copy; 2023 Alpha Kamara G_1PRO_D2</p>

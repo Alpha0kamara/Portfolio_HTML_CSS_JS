@@ -61,7 +61,7 @@ body{
 }
 
 /*------------ contact ---------------------*/
-#contact-content{
+#form-contact{
     gap: 15px;
     margin: auto;
     display: flex;
@@ -192,6 +192,8 @@ body{
 
     
 }
+
+/*--------------- map --------------------*/
 #mapje{
     padding: 0;
     margin: 0;
@@ -199,7 +201,7 @@ body{
     height: 20rem;
 }
 #map{
-    height: 180px;
+    height: 200px;
     
 }
 
