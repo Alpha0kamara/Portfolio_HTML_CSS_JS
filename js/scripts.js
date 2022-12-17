@@ -14,27 +14,7 @@ function sendMessage(){
 const cart = document.querySelector('#cart');
 const cartModalOverlay = document.querySelector('.cart-modal-overlay');
 
-cart.addEventListener('click', () => {
-  if (cartModalOverlay.style.transform === 'translateX(-200%)'){
-    cartModalOverlay.style.transform = 'translateX(0)';
-  } else {
-    cartModalOverlay.style.transform = 'translateX(-200%)';
-  }
-})
-// end of open cart modal
 
-// close cart modal
-const closeBtn = document.querySelector ('#close-btn');
-
-closeBtn.addEventListener('click', () => {
-  cartModalOverlay.style.transform = 'translateX(-200%)';
-});
-
-cartModalOverlay.addEventListener('click', (e) => {
-  if (e.target.classList.contains('cart-modal-overlay')){
-    cartModalOverlay.style.transform = 'translateX(-200%)'
-  }
-})
 // end of close cart modal
 
 // add products to cart
@@ -70,12 +50,12 @@ function addItemToCart (price, imageSrc) {
   }
   
   var cartRowItems = `
-  <div class="product-row">
+  
         <img class="cart-image" src="${imageSrc}" alt="">
         <span class ="cart-price">${price}</span>
         <input class="product-quantity" type="number" value="1">
         <button class="remove-btn">Remove</button>
-        </div>
+        
         
       `
   productRow.innerHTML = cartRowItems;
@@ -123,12 +103,12 @@ function updateCartPrice() {
     cartRow = productRow[i]
   var priceElement = cartRow.getElementsByClassName('cart-price')[0]
   var quantityElement = cartRow.getElementsByClassName('product-quantity')[0]
-  var price = parseFloat(priceElement.innerText.replace('$', ''))
+  var price = parseFloat(priceElement.innerText.replace('€', ''))
   var quantity = quantityElement.value
   total = total + (price * quantity )
     
   }
-  document.getElementsByClassName('total-price')[0].innerText =  '$' + total
+  document.getElementsByClassName('total-price')[0].innerText =  '€' + total
 
 document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
 }
@@ -143,7 +123,6 @@ purchaseBtn.addEventListener('click', purchaseBtnClicked)
 
 function purchaseBtnClicked () {
   alert ('Thank you for your purchase');
-  cartModalOverlay.style.transform= 'translateX(-100%)'
  var cartItems = document.getElementsByClassName('product-rows')[0]
  while (cartItems.hasChildNodes()) {
    cartItems.removeChild(cartItems.firstChild)
@@ -152,5 +131,3 @@ function purchaseBtnClicked () {
   updateCartPrice()
 }
 // end of purchase items
-
-//alert user if cart is empty

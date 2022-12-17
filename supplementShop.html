@@ -2,86 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Kamara </title>
-    <link rel="stylesheet" href="/css/style.css">
-  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha Kamara </title>
+  <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
-<body>
-    <nav class="nav">
-        <figure>
-            <a href="/index.html" ><img src="/assets/logo.jpeg" alt="mijn foto logo" class="logo" ></a>
+<body id="supp-body">
+  <nav class="nav">
+    <figure>
+      <a href="/index.html"><img src="/assets/logo.jpeg" alt="mijn foto logo" class="logo"></a>
+    </figure>
+    <ul class="navItems">
+      <li class="navItem"> <a class="linkText" href="/index.html">Home</a> </li>
+      <li class="navItem"> <a class="linkText" href="/hobby.html">Hobby</a></li>
+      <li class="navItem"> <a class="linkText" href="/contact.html">Contact</a></li>
+      <input class="navItem" id="searchB" type="text" placeholder="Zoeken.." />
+    </ul>
+  </nav>
+  <main class="main">
+    <section class="supplement-content">
+
+      <article class="cart-modal-overlay">
+        <div class="cart-modal">
+          <div class="product-rows">
+          </div>
+          <div class="total">
+            <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">€0</span>
+            <button class="purchase-btn">PURCHASE</button>
+            <div class="cart-btn">
+              <i id="cart" class="fas fa-shopping-cart"></i>
+              <span class="cart-quantity">0</span>
+            </div>
+          </div>
+        </div>
+       
+      </article>
+      <!--  products  -->
+      <section class="items-container">
+        <article class="card-1 card">
+          <figure>
+            <img src="/assets/protein.png" alt="Supplementen" class="product-image">
+            <figcaption> &#169; <abbr title="https://static.thcdn.com/images/large/webp//productimg/1600/1600/10530943-1224889444460882.jpg">url</abbr></figcaption>
         </figure>
-        <ul class="navItems">
-            <li class="navItem"> <a class="linkText" href="/index.html">Home</a> </li>
-            <li class="navItem"> <a class="linkText" href="/hobby.html">Hobby</a></li>
-            <li class="navItem"> <a class="linkText" href="/contact.html">Contact</a></li>
-            <input class="navItem" id="searchB" type="text" placeholder="Zoeken.."/>
-        </ul>
-    </nav>
-    <main class="main">
-        <section class="home-content">
+          <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">€30</span>
+        </article>
 
-            div class="cart-modal-overlay">
-    <div class="cart-modal">
-      <i id="close-btn" class="fas fa-times"></i>
-        <h1 class="cart-is-empty">Cart is empty</h1>
-      
-        <div class="product-rows">
-        </div>
-        <div class="total">
-          <h1 class="cart-total">TOTAL</h1>
-            <span class="total-price">$0</span>
-              <button class="purchase-btn">PURCHASE</button>
-        </div>
-      </div>
-</div>
-      
-<!--   end of cart modal -->
-  <div class="cart-btn">
-    <i id="cart" class="fas fa-shopping-cart"></i>
-      <span class ="cart-quantity">0</span>
-  </div>
-<!--  products  -->
-  <div class="items-container">
-    <div class="card-1 card">
-      <img class="product-image" src="./img/image-1.webp" alt="">
-        <button class="add-to-cart">Add to cart</button>
-          <span class="product-price">$1395</span>
-    </div>
-    <div class="card-2 card">
-      <img class="product-image" src="./img/image-2.webp" alt="">
-      <button class="add-to-cart">Add to cart</button>
-        <span class="product-price">$1175</span>
-    </div>
-    <div class="card-3 card">
-      <img class="product-image" src="./img/image-3.webp" alt="">
-        <button class="add-to-cart">Add to cart</button>
-          <span class="product-price">$1150</span>
-    </div>
-    <div class="card-4 card">
-      <img class="product-image" src="./img/image-4.webp" alt="">
-         <button class="add-to-cart">Add to cart</button>
-        <span class="product-price">$1575</span>
-    </div>
-    <div class="card-5 card">
-      <img class="product-image" src="./img/image-5.webp" alt="">
-      <button class="add-to-cart">Add to cart</button>
-      <span class="product-price">$1230</span>
-    </div>
-  </div>  
+        <article class="card-2 card">
+          <figure>
+            <img src="/assets/proteinPop.png" alt="Supplementen" class="product-image">
+            <figcaption> &#169; <abbr title="https://static.thcdn.com/images/large/webp//productimg/1600/1600/10530943-1224889444460882.jpg">url</abbr></figcaption>
+        </figure>
+          <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">€15</span>
+        </article>
 
-
-        </section>
-    </main>
-    <aside></aside>
-    <footer class="footer">
-        <p>&copy; 2023 Alpha Kamara G_1PRO_D2</p>
-    </footer>
-    <script src="js/scripts.js"></script>
+        <article class="card-3 card">
+          <figure>
+            <img src="/assets/supp.PNG" alt="Supplementen" class="product-image">
+            <figcaption> &#169; <abbr title="https://static.thcdn.com/images/large/webp//productimg/1600/1600/10530943-1224889444460882.jpg">url</abbr></figcaption>
+        </figure>
+          <button class="add-to-cart">Add to cart</button>
+          <span class="product-price">€20</span>
+        </article>
+        
+      </section>
+    </section>
+  </main>
+  <aside></aside>
+  <footer class="footer">
+    <p>&copy; 2023 Alpha Kamara G_1PRO_D2</p>
+  </footer>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
