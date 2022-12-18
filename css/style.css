@@ -266,7 +266,6 @@ flex-direction: column;
     align-items: center;
     justify-content: center;
     gap:3px;
-
 }
 
 .card{
@@ -313,9 +312,7 @@ flex-direction: column;
     .product-rows{
         justify-content: center;
         flex-direction: column;
-    }
-   
-    
+    }   
 }
 
 
